@@ -1,0 +1,33 @@
+2021-07-27T21:28:14+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function convert_number(), 1 passed in /opt/lampp/htdocs/wordpress/wp-includes/class-wp-hook.php on line 303 and exactly 2 expected in /opt/lampp/htdocs/wordpress/wp-content/plugins/myplugin.php:33
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress/wp-includes/class-wp-hook.php(303): convert_number('\n<p>5</p>\n\n\n\n<p...')
+#1 /opt/lampp/htdocs/wordpress/wp-includes/plugin.php(189): WP_Hook->apply_filters('\n<p>5</p>\n\n\n\n<p...', Array)
+#2 /opt/lampp/htdocs/wordpress/wp-includes/post-template.php(253): apply_filters('the_content', '<!-- wp:paragra...')
+#3 /opt/lampp/htdocs/wordpress/wp-content/themes/elite-commerce/template-parts/content/content-single.php(42): the_content('Continue readin...')
+#4 /opt/lampp/htdocs/wordpress/wp-includes/template.php(772): require('/opt/lampp/htdo...')
+#5 /opt/lampp/htdocs/wordpress/wp-includes/template.php(716): load_template('/opt/lampp/htdo...', false, Array)
+#6 /opt/lampp/htdocs/wordpress/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#7 /opt/lampp/htdocs/wordpress/wp-content/themes/elite-commerce/single.php(20): get_template_part('template-parts/...', 'single')
+#8 /opt/lampp/htdocs/wordpress/wp-includes/template-loader.php(106): include('/opt/lampp/htdo...')
+#9 /opt/lampp/htdocs/wordpress/wp-blog-header.php(19): require_once('/opt/lampp/htdo...')
+#10 /opt/lampp/htdocs/wordpress/index.php(17): require('/opt/lampp/htdo...')
+#11 {main}
+  thrown in /opt/lampp/htdocs/wordpress/wp-content/plugins/myplugin.php on line 33
+
+2021-07-27T21:29:10+00:00 CRITICAL Uncaught ArgumentCountError: Too few arguments to function convert_number(), 0 passed in /opt/lampp/htdocs/wordpress/wp-content/plugins/myplugin.php on line 146 and exactly 1 expected in /opt/lampp/htdocs/wordpress/wp-content/plugins/myplugin.php:32
+Stack trace:
+#0 /opt/lampp/htdocs/wordpress/wp-content/plugins/myplugin.php(146): convert_number()
+#1 /opt/lampp/htdocs/wordpress/wp-includes/class-wp-hook.php(303): rename_content('\n<p>5</p>\n\n\n\n<p...')
+#2 /opt/lampp/htdocs/wordpress/wp-includes/plugin.php(189): WP_Hook->apply_filters('\n<p>5</p>\n\n\n\n<p...', Array)
+#3 /opt/lampp/htdocs/wordpress/wp-includes/post-template.php(253): apply_filters('the_content', '<!-- wp:paragra...')
+#4 /opt/lampp/htdocs/wordpress/wp-content/themes/elite-commerce/template-parts/content/content-single.php(42): the_content('Continue readin...')
+#5 /opt/lampp/htdocs/wordpress/wp-includes/template.php(772): require('/opt/lampp/htdo...')
+#6 /opt/lampp/htdocs/wordpress/wp-includes/template.php(716): load_template('/opt/lampp/htdo...', false, Array)
+#7 /opt/lampp/htdocs/wordpress/wp-includes/general-template.php(204): locate_template(Array, true, false, Array)
+#8 /opt/lampp/htdocs/wordpress/wp-content/themes/elite-commerce/single.php(20): get_template_part('template-parts/...', 'single')
+#9 /opt/lampp/htdocs/wordpress/wp-includes/template-loader.php(106): include('/opt/lampp/htdo...')
+#10 /opt/lampp/htdocs/wordpress/wp-blog-header.php(19): require_once('/opt/lampp/htdo...')
+#11 /opt/lampp/htdocs/wordpress/index.php(17): require('/opt/lampp/htdo...')
+#12 {main}
+  thrown in /opt/lampp/htdocs/wordpress/wp-content/plugins/myplugin.php on line 32
+
